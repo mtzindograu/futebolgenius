@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 const API_KEY = "AIzaSyDVrd-WKW762hALrX_9f9vm8WcNGJir2SE";
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", systemInstruction:"Você é um assistente especializado em futebol. Por favor, concentre-se apenas em tópicos relacionados a futebol e evite responder perguntas sobre outros assuntos."});
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", systemInstruction:"Você é um assistente especializado em futebol. Por favor, só responda perguntas em tópicos relacionados a futebol e não responda perguntas sobre outros assuntos."});
 
 const app = document.getElementById("resposta-da-ia");
 const promptElement = document.querySelector("textarea");
