@@ -27,7 +27,7 @@ enviarButton.addEventListener("click", async () => {
         const ip = data.ip;
 
         // Salvando o prompt e o IP no histórico
-        fetch("http://localhost:6969/historico", {
+        fetch("https://futebolgenius.onrender.com/historico", {
           method: "POST",
           headers: {
             Accept: "application/json",
@@ -37,7 +37,7 @@ enviarButton.addEventListener("click", async () => {
         });
 
         // Salvando a resposta da IA no histórico
-        fetch("http://localhost:6969/historico", {
+        fetch("https://futebolgenius.onrender.com/historico", {
           method: "POST",
           headers: {
             Accept: "application/json",
