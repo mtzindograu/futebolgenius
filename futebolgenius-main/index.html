@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/bola-1.png"/>
+  <title>Chat IA de Futebol</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Importando Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Importando a biblioteca da Google Generative AI -->
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+
+  <!-- Biblioteca para renderizar markdown -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js" 
+          integrity="sha512-kaDP6dcDG3+X87m9SnhyJzwBMKrYnd2tLJjGdBrZ9yEL8Zcl2iJRsPwylLkbd2g3QC5S8efV3sgwI5r73U0HnA==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+  </script>
+</head>
+<body>
+  <header>
+    <h2>Chat de Futebol ⚽</h2>
+    <h3>Pergunte para nossa IA!</h3>
+  </header>
+
+  <main>
+    <div id="resposta-da-ia" class="resposta"></div>
+    <textarea placeholder="Digite uma mensagem..." rows="3"></textarea>
+    <button id="mensagem">
+      <img src="img/bola-1.png" alt="Enviar" class="icone-enviar">
+    </button>
+  </main>
+
+  <!-- Importando o script principal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js" integrity="sha512-kaDP6dcDG3+X87m9SnhyJzwBMKrYnd2tLJjGdBrZ9yEL8Zcl2iJRsPwylLkbd2g3QC5S8efV3sgwI5r73U0HnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script type="module" src="script.js"></script>
+  <br>
+  <footer>Desenvolvido com 💟 por Mateus - IFPR Campus Assis Chateaubriand</footer>
+
+</body>
+</html>
